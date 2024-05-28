@@ -16,8 +16,8 @@ jobs:
     - name: Upload to cPanel
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        ftp-server: ftp://ftp.coach-lewi.com
-        ftp-username: ${{ secrets.FTP_USERNAME }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        server: ftp://ftp.coach-lewi.com
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./  # Répertoire local à déployer
         server-dir: /home/coachlew/portfoliocicd.coach-lewi.com  # Répertoire distant sur cPanel
