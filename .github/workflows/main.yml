@@ -20,4 +20,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./  # Répertoire local à déployer
-        server-dir: /portfoliocicd.coach-lewi.com/  # Répertoire distant sur cPanel
+        server-dir: /  # Répertoire distant sur cPanel
